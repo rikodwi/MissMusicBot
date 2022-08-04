@@ -65,7 +65,7 @@ async def play_commnd(
     plist_type = None
     spotify = None
     user_id = message.from_user.id
-    user_name = message.from_user.first_name
+    user_name = message.from_user.mention
     audio_telegram = (
         (
             message.reply_to_message.audio
@@ -238,7 +238,7 @@ async def play_commnd(
                 plist_type = "spplay"
                 img = config.SPOTIFY_PLAYLIST_IMG_URL
                 cap = _["play_12"].format(
-                    message.from_user.first_name
+                    message.from_user.mention
                 )
             elif "album" in url:
                 try:
@@ -249,7 +249,7 @@ async def play_commnd(
                 plist_type = "spalbum"
                 img = config.SPOTIFY_ALBUM_IMG_URL
                 cap = _["play_12"].format(
-                    message.from_user.first_name
+                    message.from_user.mention
                 )
             elif "artist" in url:
                 try:
@@ -260,7 +260,7 @@ async def play_commnd(
                 plist_type = "spartist"
                 img = config.SPOTIFY_ARTIST_IMG_URL
                 cap = _["play_12"].format(
-                    message.from_user.first_name
+                    message.from_user.mention
                 )
             else:
                 return await mystic.edit_text(_["play_17"])
@@ -284,7 +284,7 @@ async def play_commnd(
                 streamtype = "playlist"
                 plist_type = "apple"
                 cap = _["play_13"].format(
-                    message.from_user.first_name
+                    message.from_user.mention
                 )
                 img = url
             else:
@@ -356,7 +356,7 @@ async def play_commnd(
                     message.from_user.id,
                     url,
                     chat_id,
-                    message.from_user.first_name,
+                    message.from_user.mention,
                     message.chat.id,
                     video=video,
                     streamtype="index",
@@ -525,7 +525,7 @@ async def play_music(client, CallbackQuery, _):
         )
     except:
         return
-    user_name = CallbackQuery.from_user.first_name
+    user_name = CallbackQuery.from_user.mention
     try:
         await CallbackQuery.message.delete()
         await CallbackQuery.answer()
@@ -626,7 +626,7 @@ async def play_playlists_command(client, CallbackQuery, _):
         )
     except:
         return
-    user_name = CallbackQuery.from_user.first_name
+    user_name = CallbackQuery.from_user.mention
     await CallbackQuery.message.delete()
     try:
         await CallbackQuery.answer()

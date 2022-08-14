@@ -205,7 +205,7 @@ lyrics_4 : "Klik tombol di bawah ini dan cari lirik untuk menghindari pencarian 
 
 #Ping
 ping_1 : "Pong!!!!"
-ping_2 : "{0} berfungsi baik dengan ping `{1}` md.\n\nWaktu aktif bot = {2} \n total penyimpanan server = {3} \n Beban CPU = {4} \n konsumsi Ram = {5} \n ping Py-Tgcalls = `{6}` ms"
+ping_2 : "{0} berfungsi baik dengan \n\n Waktu aktif bot = {2} \n penyimpanan server = {3} \n Beban CPU = {4} \n konsumsi Ram = {5} \n ping =`{1}`\n md ping Py-Tgcalls = `{6}` ms"
 
 
 # Song

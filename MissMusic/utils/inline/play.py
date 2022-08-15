@@ -11,35 +11,15 @@ import random
 
 from pyrogram.types import InlineKeyboardButton
 
-selections = [
-    "▁▄▂▇▄▅▄▅▃",
-    "▁▃▇▂▅▇▄▅▃",
-    "▃▁▇▂▅▃▄▃▅",
-    "▃▄▂▄▇▅▃▅▁",
-    "▁▃▄▂▇▃▄▅▃",
-    "▃▁▄▂▅▃▇▃▅",
-    "▁▇▄▂▅▄▅▃▄",
-    "▁▃▅▇▂▅▄▃▇",
-    "▃▅▂▅▇▁▄▃▁",
-    "▇▅▂▅▃▄▃▁▃",
-    "▃▇▂▅▁▅▄▃▁",
-    "▅▄▇▂▅▂▄▇▁",
-    "▃▅▂▅▃▇▄▅▃",
-]
 
 
 ## After Edits with Timer Bar
 
 
-def stream_markup_timer(_, videoid, chat_id, played, dur):
-    bar = random.choice(selections)
+def stream_markup_timer(_, videoid, chat_id):
+    bar = random.choice()
     buttons = [
-        [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-        ],
+  
         [
             InlineKeyboardButton(
                 text=_["PL_B_2"],
@@ -59,15 +39,9 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     return buttons
 
 
-def telegram_markup_timer(_, chat_id, played, dur):
-    bar = random.choice(selections)
+def telegram_markup_timer(_, chat_id):
     buttons = [
-        [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-        ],
+
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],

@@ -87,7 +87,7 @@ help_1 : "Klik tombol di bawah untuk informasi lebih lanjut. Jika Anda menghadap
 help_2 : "Hubungi saya di PM untuk bantuan."
 
 # Settings
-setting_1 : "⚙️ **Setelan Bot Musik**\n\n🖇**Group:** {0}\n🔖**ID Group:** `{1}`\n\n💡**Pilih tombol fungsi dari di bawah ini yang ingin Anda edit atau ubah.**"
+setting_1 : "⚙️ **PENGATURAN**\n**Group:** {0}\n**ID Group:** `{1}`\n\nPilih salah satu tombol di bawah ini yang ingin Anda  ubah."
 setting_3 : "⁉️ Apa Ini?\n\n1) Langsung: Memutar kueri penelusuran secara langsung. Gunakan -v untuk memutar video dalam mode langsung.\n\n2) Sebaris: Mengembalikan Tombol Markup Sebaris untuk memilih antara video & audio."
 setting_4 : "⁉️ Apa Ini?\n\n👥 Semua Orang: Siapa saja dapat menggunakan perintah admin (lewati, jeda, lanjutkan, dll.) yang ada di grup ini.\n\n🙍 Hanya Admin: Hanya admin dan pengguna yang berwenang yang dapat menggunakan perintah admin ."
 setting_5 : "Tidak Ditemukan Pengguna Resmi\n\nAnda dapat mengizinkan non-admin menggunakan perintah admin saya dengan /auth dan menghapus dengan menggunakan /unauth"
@@ -205,7 +205,7 @@ lyrics_4 : "Klik tombol di bawah ini dan cari lirik untuk menghindari pencarian 
 
 #Ping
 ping_1 : "Pong!!!!"
-ping_2 : "{0} berfungsi baik dengan \n\n Waktu aktif bot = {2} \n penyimpanan server = {3} \n Beban CPU = {4} \n konsumsi Ram = {5} \n ping = `{1}` md \n ping Py-Tgcalls = `{6}` ms"
+ping_2 : "{0} berfungsi baik  \n\n Waktu aktif: {2} \n server: {3} \n CPU: {4} \n Ram: {5} \n ping: `{1}` md \n ping Py-Tgcalls: `{6}` ms"
 
 
 # Song
@@ -237,17 +237,17 @@ stream_4 : "⚡ **Memulai Streaming** \n\n**🏷Judul:** [{0}]({1})\n⌛️**Dur
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON : "🗑 Tutup"
-CLOSEMENU_BUTTON : "🗑 Tutup Menu"
-BACK_BUTTON : "⬅ Kembali"
+CLOSE_BUTTON : "✅ Tutup"
+CLOSEMENU_BUTTON : "✅ Tutup Menu"
+BACK_BUTTON : "↩️ Kembali"
 UNBAN_BUTTON : "🗑 Unban Asisten"
 
 #Lyrics
-L_B_1 : "🚀 Lihat Lirik Sekarang"
+L_B_1 : "👀 Lihat Lirik Sekarang"
 
 # Start
 S_B_1 : "🗒 Perintah"
-S_B_2 : "🔧 Pengaturan"
+S_B_2 : "⚙️ Pengaturan"
 S_B_3 : "👥 Group"
 S_B_4 : "⚡ Channel"
 S_B_5 : "✚ Tambahkan ke Group"
@@ -279,7 +279,7 @@ PL_B_1 : "🚀 Putar Playlist"
 PL_B_2 : "✚ Daftar Putar"
 PL_B_3 : "✚ Tambahan"
 PL_B_4 : "📡 Mode Putar"
-PL_B_5 : "🔄 Hapus Semua Daftar Putar"
+PL_B_5 : "🗑 Hapus Semua Daftar Putar"
 PL_B_6 : "↗️ Hapus Daftar Putar"
 PL_B_7 : "❗️ Ya, saya yakin"
 PL_B_8 : "🔢 Mainkan Top 10"
@@ -294,7 +294,7 @@ ST_B_3 : "🎩 Pengguna Auth"
 ST_B_4 : "📱 Dasboard"
 ST_B_5 : "▶️ Mode Putar"
 ST_B_6 : "🏳️‍🌈 Bahasa"
-ST_B_7 : "🔄 Mode Bersih"
+ST_B_7 : "♻️ Mode Bersih"
 ST_B_8 : "{0} Audio Kualitas Rendah"
 ST_B_9 : "{0} Audio Kualitas Sedang"
 ST_B_10 : "{0} Audio Berkualitas Tinggi"

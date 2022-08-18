@@ -1,7 +1,7 @@
 .env
 .cache
 Misslogs.txt
-.misskumis
+.DS_Store
 *.session
 raw_files/
 cache/

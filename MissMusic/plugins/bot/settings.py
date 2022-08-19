@@ -7,6 +7,7 @@
 #
 # All rights reserved.
 
+from email import message
 from pyrogram import filters
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
@@ -98,7 +99,7 @@ async def settings_back_markup(
             OWNER = None
         buttons = private_panel(_, app.username, OWNER)
         return await CallbackQuery.edit_message_text(
-            _["start_2"].format(message.from_user.first_name),
+            _["start_2"].format(message.from_user.mention),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
